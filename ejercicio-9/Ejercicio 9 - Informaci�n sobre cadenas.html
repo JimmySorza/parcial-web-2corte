@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Ejercicio 9 - Informaci�n sobre cadenas</title>
+
+<script type="text/javascript">
+
+const text = prompt("ingresa un text para identificar si presenta solo mayuculas, solo minusculas o es combinado")
+function info(cadena) {
+	
+	var resultado = "La cadena \""+cadena+"\" ";
+	
+	// Comprobar may�sculas y min�sculas
+	if(cadena == cadena.toUpperCase()) {
+		resultado += " está formada solo por mayúsculas";
+	}
+	else if(cadena == cadena.toLowerCase()) {
+		resultado += " está formada solo por minúsculas";
+	}
+	else {
+		resultado += " está formada por mayúsculas y minúsculas";
+	}
+	
+	return alert(resultado);
+}
+info(text)
+</script>
+</head>
+
+<body>
+</body>
+</html>

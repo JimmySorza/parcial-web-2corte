@@ -2,22 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Ejercicio 8 - Funciones básicas</title>
+<title>Ejercicio 8 - Funciones bï¿½sicas</title>
 
 <script type="text/javascript">
-var numero = prompt("Introduce un número entero");
+var numero = prompt("Introduce un numero, si no es numero el sistema te avisarÃ¡.");
 
-var resultado = parImpar(numero);
-alert("El número "+numero+" es "+resultado);
-
-function parImpar(numero) {
-	if(numero % 2 == 0) {
-		return "par";
+function isNumber(numero) {
+	if(isNaN(numero)) {
+		return alert("No es un nÃºmero");
 	}
 	else {
-		return "impar";
+        return alert("Si es un nÃºmero");
 	}
 }
+
+isNumber(numero);
 </script>
 </head>
 
