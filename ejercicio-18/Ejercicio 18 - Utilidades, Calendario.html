@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Ejercicio 18 - Utilidades, Calendario</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="https://dis.um.es/~lopezquesada/documentos/IES_1314/IAW/curso/UT7/libroswebjavascript/www.librosweb.es/javascript/ejercicios/soluciones/ejercicio18/css/calendar-estilo.css" tppabs="http://www.librosweb.es/javascript/ejercicios/soluciones/ejercicio18/css/calendar-estilo.css" />
+
+<script type="text/javascript" src="https://dis.um.es/~lopezquesada/documentos/IES_1314/IAW/curso/UT7/libroswebjavascript/www.librosweb.es/javascript/ejercicios/soluciones/ejercicio18/js/calendar.js" tppabs="http://www.librosweb.es/javascript/ejercicios/soluciones/ejercicio18/js/calendar.js"></script>
+<script type="text/javascript" src="https://dis.um.es/~lopezquesada/documentos/IES_1314/IAW/curso/UT7/libroswebjavascript/www.librosweb.es/javascript/ejercicios/soluciones/ejercicio18/js/calendar-es.js" tppabs="http://www.librosweb.es/javascript/ejercicios/soluciones/ejercicio18/js/calendar-es.js"></script>
+<script type="text/javascript" src="https://dis.um.es/~lopezquesada/documentos/IES_1314/IAW/curso/UT7/libroswebjavascript/www.librosweb.es/javascript/ejercicios/soluciones/ejercicio18/js/calendar-setup.js" tppabs="http://www.librosweb.es/javascript/ejercicios/soluciones/ejercicio18/js/calendar-setup.js"></script>
+
+</head>
+
+<body>
+
+<p></p>
+<input type="hidden" name="fecha" id="fecha" />
+<span style="background-color: #51776a; cursor:default; padding:.3em; border:thin solid #0033ff; text-decoration:underline; color: #d0ff00;"
+onmouseover="this.style.cursor='pointer'; this.style.cursor='hand'; this.style.backgroundColor='#5b2b94'; this.style.textDecoration='none';"
+onmouseout="this.style.backgroundColor='#7a7a2d'; this.style.textDecoration='underline';"
+id="fecha_usuario">
+Pincha aquí para seleccionar la fecha
+</span>
+
+
+<script type="text/javascript">
+Calendar.setup({
+  inputField: "fecha",
+  ifFormat:   "%d/%m/%Y",
+  weekNumbers: false,
+  displayArea: "fecha_usuario",
+  daFormat:    "%A, %d de %B de %Y"
+});
+</script>
+
+</body>
+</html>
