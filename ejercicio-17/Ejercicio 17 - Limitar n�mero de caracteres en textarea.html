@@ -11,7 +11,7 @@ body {font-family: arial, helvetica; background-color: #b7fcda; color: black}
     width:50%;
     margin: 40px auto;
     font-size: 50px;
-    background: linear-gradient(to right, black 0% 1.4em, red 1.2em 1.95em, black 1.95em 100%);
+    background: linear-gradient(to right, #44bd30 0% 1.4em, red 1.2em 1.95em, black 1.95em 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -64,7 +64,7 @@ function actualizaInfo(maximoCaracteres) {
 <body>
 
 <div id="info">Máximo 100 caracteres</div>
-<textarea class="textA" id="texto" onkeypress="return limita(event, 100);" onkeyup="actualizaInfo(100)" rows="6" cols="30"></textarea>
+<textarea class="textA" id="texto" onkeypress="return limita(event, 50);" onkeyup="actualizaInfo(100)" rows="6" cols="30"></textarea>
 
 </body>
 </html>
